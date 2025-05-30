@@ -317,8 +317,8 @@ void ISDist::local_search_with_decimation(char *inputfile)
                 if (soft_unsat_weight < opt_unsat_weight)
                 {
                     opt_time = get_runtime();
-                    //cout << "o " << soft_unsat_weight << " " << total_step << " " << tries << " " << soft_smooth_probability << " " << opt_time << endl;
-                    cout << "o " << soft_unsat_weight << " " << opt_time << endl;
+                    cout << "o " << soft_unsat_weight << " " << total_step << " " << tries << " " << soft_smooth_probability << " " << opt_time << endl;
+                    // cout << "o " << soft_unsat_weight << " " << opt_time << endl;
                     opt_unsat_weight = soft_unsat_weight;
 
                     for (int v = 1; v <= num_vars; ++v)
